@@ -38,7 +38,6 @@ router.get('/:id', (req, res) => {
       });
 });
 
-router.post('/', (req, res) => {
   // create a new tag
   router.post('/', (req, res) => {
     Tag.create({
@@ -50,7 +49,7 @@ router.post('/', (req, res) => {
         res.status(500).json(err);
       });
   });
-});
+
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
